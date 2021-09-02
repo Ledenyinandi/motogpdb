@@ -1,5 +1,7 @@
 package nandor.ledenyi.motogpdb.service;
 
+import nandor.ledenyi.motogpdb.exception.DataNotFoundException;
+import nandor.ledenyi.motogpdb.exception.EmptyDatabaseException;
 import nandor.ledenyi.motogpdb.mapper.CountryMapper;
 import nandor.ledenyi.motogpdb.mapper.GrandPrixMapper;
 import nandor.ledenyi.motogpdb.mapper.RiderMapper;
