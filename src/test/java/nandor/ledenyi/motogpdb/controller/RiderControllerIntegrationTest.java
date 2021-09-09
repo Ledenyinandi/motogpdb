@@ -20,7 +20,7 @@ public class RiderControllerIntegrationTest {
 
     private final String BASE_URL = "http://localhost:";
 
-    private static TestRestTemplate restTemplate = new TestRestTemplate();
+    private TestRestTemplate restTemplate = new TestRestTemplate();
 
     @Test
     public void testFindAll_shouldReturnListOfRiders() {
