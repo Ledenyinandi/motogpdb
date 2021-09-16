@@ -77,6 +77,4 @@ public class CountryServiceUnitTest {
         Country foundCountry = countryMapper.convertToEntity(countryService.findById(1L));
         Assertions.assertFalse(foundCountry.getName().isEmpty());
     }
-
-
 }
