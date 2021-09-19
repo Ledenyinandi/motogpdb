@@ -26,6 +26,11 @@ public class CountryService {
     @Autowired
     private RiderMapper riderMapper;
 
+    public CountryService(CountryRepository countryRepository, CountryMapper countryMapper) {
+        this.countryRepository = countryRepository;
+        this.countryMapper = countryMapper;
+    }
+
     public List<CountryDto> findAll() {
         List<CountryDto> countries = new ArrayList<>();
         countryRepository.findAll().forEach(country -> countries.add(countryMapper.convertToDto(country)));
