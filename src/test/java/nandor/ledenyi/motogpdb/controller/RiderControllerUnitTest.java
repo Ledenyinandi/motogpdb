@@ -54,7 +54,6 @@ public class RiderControllerUnitTest {
                 .andExpect(jsonPath("$", hasSize(2)))
                 .andExpect(jsonPath("$[0].id", is(1)))
                 .andExpect(jsonPath("$[1].id", is(2)));
-        System.out.println("valami");
     }
 
     @Test
